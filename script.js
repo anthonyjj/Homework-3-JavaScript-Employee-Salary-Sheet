@@ -7,6 +7,12 @@ const collectEmployees = function() {
 let firstName = prompt ("First Name");
 let lastName = prompt ("Last Name");
 let salary = prompt ("Enter Salary");
+let secondfirstName = prompt ("First Name");
+let secondlastName = prompt ("Last Name");
+let secondsalary = prompt ("Enter Salary");
+let thirdfirstName = prompt ("First Name");
+let thirdlastName = prompt ("Last Name");
+let thirdsalary = prompt ("Enter Salary");
 }
 
 // Display the average salary
