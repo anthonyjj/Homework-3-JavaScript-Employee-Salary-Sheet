@@ -52,9 +52,19 @@ let thirdsalary = prompt ("Enter Salary");
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+    let totalSalary = 0;
   
-
-}
+    employeesArray.forEach(employee => {
+      totalSalary += parseFloat(employee.salary);
+    });
+  
+    const averageSalary = totalSalary / employeesArray.length;
+  
+    const averageSalaryElement = document.querySelector('#average-salary');
+    averageSalaryElement.textContent = `Average Salary: $${averageSalary.toFixed(2)}`;
+  
+    console.log(`The average employees salary between our ${employeesArray.length} employees is $${totalSalary.toFixed(2)}`);
+  };
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
